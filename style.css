@@ -1,3 +1,69 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --grey-color: #e5e5e5;
+    --bell-color: #ff8f00;
+    --aside-color: #051e34;
+    --text-color: #ffffff;
+    --blue-color: #1b72e8;
+}
+
+header {
+    height: 50px;
+}
+
+#search-bar {
+    background-color: var(--grey-color);
+    border-radius: 5px;
+    height: 30px;
+    border-style: none;
+    font-size: 12px;
+}
+
+.bell {
+    color: var(--bell-color);
+}
+
+.aside {
+    height: 700px;
+    background-image: url(img/sidebar-bg.png);
+    background-color: var(--aside-color);
+    color: var(--text-color);
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.upper-main {
+    background-color: var(--blue-color);
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* grigio scuro 
+#e5e5e5 */
+/* 
+
+
+
