@@ -148,6 +148,48 @@ a {
     padding-top: 5px;
 }
 
+#special-link {
+    color: #1b72e8;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .aside {
+        width: 50px;
+    }
+
+    .main-content {
+        width: calc(100% - 50px);
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .not-hidden {
+        display: none;
+    }
+
+    #not-hidden {
+        display: none;
+    }
+
+    .resize {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .date {
+        display: none;
+    }
+}
   
 
 

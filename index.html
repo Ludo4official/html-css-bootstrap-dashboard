@@ -15,18 +15,19 @@
     <body>
         <header class="sticky-top bg-light container-fluid">
             <div class="row py-2 align-items-center">
-                <div class="col-1 ps-3">
-                    <img src="img/logo.svg" alt="">
+                <div class="col-2">
+                    <img class="not-hidden" src="img/logo.svg" alt="">
+                    <img class="hidden resize" src="img/mobile-logo.png" alt="">
                 </div>
 
-                <div class="col-10 ps-5">
+                <div class="col-8">
                     <input class="col-12" type="search" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel"/> 
                 </div>
 
-                <div class="col-1 text-center">
-                    <i class="fa-solid fa-list-ul px-1"></i>
-                    <i class="fa-solid fa-question px-1"></i>
-                    <i class="fa-solid fa-ellipsis-vertical px-1"></i>
+                <div class="col-2 text-center">
+                    <i id="not-hidden" class="fa-solid fa-list-ul px-1"></i>
+                    <i id="not-hidden" class="fa-solid fa-question px-1"></i>
+                    <i id="not-hidden" class="fa-solid fa-ellipsis-vertical px-1"></i>
                     <i class="fa-solid fa-bell ps-1 bell"></i>
                 </div>
             </div>
@@ -38,19 +39,23 @@
                 <div class="links">
                     <ul class="mt-4">
                         <li class="py-2">
-                            <a href="http://"><i class="fa-solid fa-house pe-1"></i>Home</a>
+                            <a class="not-hidden" href="http://"><i class="fa-solid fa-house pe-1"></i>Home</a>
+                            <a class="hidden" href="http://"><i class="fa-solid fa-house pe-1"></i></a>
                         </li>
                         <li class="py-2">
-                            <a href="http://"><i class="fa-solid fa-chart-simple pe-2"></i>Stats</a>
+                            <a class="not-hidden" href="http://"><i class="fa-solid fa-chart-simple pe-2"></i>Stats</a>
+                            <a class="hidden" href="http://"><i class="fa-solid fa-chart-simple pe-2"></i></a>
                         </li>
                         <li class="py-2">
-                            <a href="http://"><i class="fa-solid fa-signal pe-1"></i>Signals</a>
+                            <a class="not-hidden" href="http://"><i class="fa-solid fa-signal pe-1"></i>Signals</a>
+                            <a class="hidden" href="http://"><i class="fa-solid fa-signal pe-1"></i></a>
                         </li>
                     </ul>
                 </div>
                             
                 <div class="admin">
-                    <a href="http://"><i class="fa-solid fa-gear pe-1"></i>Admin</a>
+                    <a class="not-hidden" href="http://"><i class="fa-solid fa-gear pe-1"></i>Admin</a>
+                    <a class="hidden" href="http://"><i class="fa-solid fa-gear pe-1"></i></a>
                 </div>
             </div>
                     
@@ -58,7 +63,7 @@
 
                 <div class="upper-main container-fluid">
                     <div class="row">
-                        <div class="col-6 py-2">
+                        <div class="col-lg-6 py-2 order-1 order-lg-1">
                            <div class="boolean">
                                 <h1>Boolean</h1>
                                 <div class="tag">Piano Blaze</div>
@@ -68,18 +73,19 @@
                                     3 app
                                 </div>
                                 <i class="fa-solid fa-angles-right"></i>
-                                <div class="tag">
+                                <div class="hidden tag">+</div>
+                                <div class="tag" id="not-hidden">
                                     Boolean mobile app
                                 </div>
-                                <div class="tag">
+                                <div class="tag" id="not-hidden">
                                     Boolean web app
                                 </div>
-                                <div class="tag">
+                                <div class="tag" id="not-hidden">
                                     Boolean blog app
                                 </div>
                            </div>
                         </div>
-                        <div class="col-4 py-3">
+                        <div class="col-lg-4 py-3 order-2 order-lg-2">
                             <div class="students">
                                 Studenti online negli ultimi 30 minuti
                             </div>
@@ -87,7 +93,7 @@
                                 125
                             </div>
                         </div>
-                        <div class="col-2 d-flex py-3">
+                        <div class="col-lg-2 d-flex py-3 order-lg-3">
                             <div class="students new">
                                 Nuovo Studente
                             </div>
@@ -100,7 +106,7 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-8 mt-3">
+                        <div class="col-lg-8 mt-3">
                             <div class="card">
                                 <div class="card-header">
                                   Prossime Classi
@@ -111,8 +117,8 @@
                                         <thead>
                                           <tr>
                                             <th scope="col" colspan="2">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
+                                            <th scope="col" class="date">Data inizio</th>
+                                            <th scope="col" class="date">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
@@ -120,8 +126,8 @@
                                         <tbody>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 75</th>
-                                            <td>15 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">15 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="done">done</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -130,8 +136,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 76</th>
-                                            <td>16 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">16 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="done">done</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -140,8 +146,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 77</th>
-                                            <td>17 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">17 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="process">process</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -149,8 +155,8 @@
                                             </td>
                                           </tr>
                                           <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 78</th>
-                                            <td>18 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">18 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="done">done</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -159,8 +165,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 79</th>
-                                            <td>19 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">19 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="failed">failed</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -169,8 +175,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 80</th>
-                                            <td>20 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">20 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="done">done</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -179,8 +185,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" colspan="2"><i class="fa-solid fa-code code"></i>Classe 81</th>
-                                            <td>21 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">21 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="failed">failed</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -189,8 +195,8 @@
                                           </tr>
                                           <tr>
                                             <th scope="row" ><i class="fa-solid fa-code code"></i>Classe 82</th>
-                                            <td>22 feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="date">22 feb 2021</td>
+                                            <td class="date">20%</td>
                                             <td><span class="done">done</span></td>
                                             <td>
                                                 <i class="fa-solid fa-pen"></i>
@@ -203,7 +209,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col 4 mt-3">
+                        <div class="col-lg-4 mt-3 order-2 order-lg-1">
                             <div class="card">
                                 <div class="card-header">
                                   Todo
@@ -219,42 +225,48 @@
                                 </ul>
                               </div>
                         </div>
-                        <div class="col-8 mt-3">
+                        <div class="col-lg-8 mt-3 order-1 order-lg-2">
                             <div class="card">
                                 <div class="card-header">
                                   F.A.Q.
                                 </div>
                                 <ul class="list-group list-group-flush">
                                   <li class="list-group-item">
-                                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item open">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                               Come aggiungere un nuovo studente?
                                             </button>
                                           </h2>
-                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                               Come posso accedere alle informazioni del mio account?
                                             </button>
                                           </h2>
-                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                              Posso usare questa dashboard da mobile?
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Posso usare questa Dashboard da mobile?
                                             </button>
                                           </h2>
-                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -262,21 +274,20 @@
                                 </ul>
                               </div>
                         </div>
-                        <div class="col 4 my-little-col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                        <div class="col-lg-4 order-3 order-lg-3">
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">Gennaio:1200</li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo:1500</li>
                                 </ul>
                                 <div class="card-body">
-                                  <a href="#" class="card-link">Card link</a>
-                                  <a href="#" class="card-link">Another link</a>
+                                  <a href="#" class="card-link" id="special-link">Visualizza report approfondito</a>
                                 </div>
                               </div>
                         </div>
