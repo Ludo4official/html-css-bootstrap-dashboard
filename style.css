@@ -14,6 +14,12 @@ header {
     height: 50px;
 }
 
+main {
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+}
+
 #search-bar {
     background-color: var(--grey-color);
     border-radius: 5px;
@@ -27,15 +33,27 @@ header {
 }
 
 .aside {
-    height: 700px;
     background-image: url(img/sidebar-bg.png);
     background-color: var(--aside-color);
     color: var(--text-color);
+    height: calc(100vh - 50px);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding-left: 0;
 }
 
 ul li {
     list-style: none;
-    font-size: 14px;
 }
 
 a {
@@ -44,10 +62,93 @@ a {
     font-size: 14px;
 }
 
+.admin {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: calc(100% - 150px);
+    height: 100%;
+    overflow: auto;
+}
+
 .upper-main {
     background-color: var(--blue-color);
-    height: 100px;
+    min-height: 120px;
+    color: var(--text-color);
 }
+
+.boolean {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    background-color: rgb(5, 30, 52, 0.3);
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.students {
+    font-size: 0.8rem;
+}
+
+.counter {
+    font-size: 2rem;
+}
+
+.new {
+    line-height: 30px;
+}
+
+.my-button {
+    background-color: var(--blue-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.done {
+    background-color: green;
+    border-radius: 5px;
+    padding: 3px;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.failed {
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+    color: var(--text-color);
+}
+
+.process {
+    background-color: gold;
+    border-radius: 5px;
+    padding: 3px;
+    color: var(--text-color);
+}
+
+.code {
+    background-color: orange;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 5px;
+}
+
+  
 
 
 
